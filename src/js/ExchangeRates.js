@@ -14,8 +14,13 @@ const ExchangeRates = () => (
     `}
   >
     {({ loading, error, data }) => {
-      if (loading) return <p>Loading...</p>;
-      if (error) return <p>Error :(</p>;
+      if (loading)
+        return (
+          <select>
+            <option>hold tight 😚</option>
+          </select>
+        );
+      if (error) return <p>no dice 🙄</p>;
 
       const options = data.rates.map(({ currency, rate }) => (
         <option key={currency} value={rate}>
