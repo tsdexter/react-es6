@@ -4,22 +4,15 @@
   "description": "react, webpack, es6, babel basic starter",
   "main": "index.js",
   "scripts": {
-    "build": "webpack",
-    "start": "webpack-dev-server",
+    "build": "webpack --mode=production",
+    "start": "webpack-dev-server --mode=development",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/tsdexter/react-es6.git"
   },
-  "keywords": [
-    "react",
-    "es6",
-    "babel",
-    "webpack",
-    "starter",
-    "barebones"
-  ],
+  "keywords": ["react", "es6", "babel", "webpack", "starter", "barebones"],
   "author": "Thomas Dexter",
   "license": "ISC",
   "bugs": {
@@ -41,7 +34,11 @@
     "webpack-dev-server": "^3.1.3"
   },
   "dependencies": {
+    "apollo-boost": "^0.1.4",
+    "graphql": "^0.13.2",
+    "graphql-tag": "^2.9.1",
     "react": "^16.3.2",
+    "react-apollo": "^2.1.3",
     "react-dom": "^16.3.2"
   }
 }
